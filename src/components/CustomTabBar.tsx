@@ -2,6 +2,7 @@ import { View, Text, StyleSheet, Pressable } from 'react-native'
 import React from 'react'
 import { BottomTabBarProps } from '@react-navigation/bottom-tabs'
 import { Ionicons } from '@expo/vector-icons';
+import { moderateScale, verticalScale } from 'react-native-size-matters';
 
 const CustomTabBar = (props: BottomTabBarProps) => {
     const routes = props.state.routes
@@ -18,7 +19,7 @@ const CustomTabBar = (props: BottomTabBarProps) => {
                         onPress={() => onPress(index)}
                         key={route.key} style={styles.tabContainer}
                     >
-                        <Icon route={route} isFocused={isFocused === index} size={22} />
+                        <Icon route={route} isFocused={isFocused === index} size={moderateScale(22)} />
                         <Text
                             style={[styles.text, { color: props.state.index === index ? 'white' : 'grey' }]}
                         >
@@ -39,11 +40,11 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         alignItems: 'center',
         backgroundColor: 'rgb(33, 33, 33)',
-        height: 70
+        height: verticalScale(60)
     },
     text: {
         color: 'white',
-        fontSize: 12
+        fontSize: moderateScale(12)
     },
     tabContainer: {
         alignItems: 'center'

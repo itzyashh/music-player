@@ -2,21 +2,22 @@ import { Image, StatusBar, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { Ionicons } from '@expo/vector-icons';
+import { moderateScale, scale, verticalScale } from 'react-native-size-matters';
 const CustomHeader = (props) => {
     console.log('props', props)
 
   return (
     <View style={styles.container}>
-        <View style={styles.appLogo}>
+        <View style={styles.appLogoContainer}>
         <Image
             source={require('../../assets/sound-waves.png')}
-            style={{ width: 25, height: 25 }}
+            style={styles.appLogo}
         />
       <Text style={styles.text}>Music</Text>
         </View>
         <View style={styles.iconContainer}>
-        <Ionicons name="search-outline" size={25} color="white" />
-        <Ionicons name="person-circle-outline" size={24} color="white" />
+        <Ionicons name="search-outline" style={styles.icon} />
+        <Ionicons name="person-circle-outline" style={styles.icon} />
         </View>
     </View>
   )
@@ -30,23 +31,30 @@ const styles = StyleSheet.create({
 
         alignItems: 'flex-end',
         justifyContent: 'space-between',
-        height: 90
+        height: verticalScale(90),
         },
-        appLogo: {
+        appLogoContainer: {
             flexDirection: 'row',
             alignItems: 'center',
-            padding: 10,
-            gap: 5
+            padding: scale(10),
+            gap: moderateScale(5)
+        },
+        appLogo: {
+            width: scale(25),
+            height: verticalScale(25),
         },
         text: {
             color: 'white',
-            fontSize: 20,
+            fontSize: moderateScale(20),
             fontWeight: 'bold',
-            letterSpacing: .222
         },
         iconContainer: {
             flexDirection: 'row',
-            gap: 20,
-            padding: 10
+            gap: moderateScale(20),
+            padding: scale(10),
+        },
+        icon: {
+            color: 'white',
+            fontSize: moderateScale(25),
         }
 })
