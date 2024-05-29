@@ -4,7 +4,7 @@ import React from 'react'
 const Favourite = () => {
   return (
     <View style={styles.container}>
-      <Text>Favourite</Text>
+      <Text style={styles.text}>Favourite</Text>
     </View>
   )
 }
@@ -15,5 +15,8 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: 'black',
+        },
+        text:{
+          color: 'white'
         }
 })

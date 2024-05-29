@@ -3,6 +3,7 @@ import React from 'react'
 import { BottomTabBarProps } from '@react-navigation/bottom-tabs'
 import { Ionicons } from '@expo/vector-icons';
 import { moderateScale, verticalScale } from 'react-native-size-matters';
+import { colors } from '../constants/colors';
 
 const CustomTabBar = (props: BottomTabBarProps) => {
     const routes = props.state.routes
@@ -39,7 +40,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
         alignItems: 'center',
-        backgroundColor: 'rgb(33, 33, 33)',
+        backgroundColor: colors.panel,
         height: verticalScale(60)
     },
     text: {

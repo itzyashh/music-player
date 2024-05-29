@@ -3,7 +3,8 @@ import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { Ionicons } from '@expo/vector-icons';
 import { moderateScale, scale, verticalScale } from 'react-native-size-matters';
-const CustomHeader = (props) => {
+import { NativeStackHeaderProps } from '@react-navigation/native-stack';
+const CustomHeader = (props: NativeStackHeaderProps) => {
     console.log('props', props)
 
   return (
@@ -28,7 +29,6 @@ export default CustomHeader
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-
         alignItems: 'flex-end',
         justifyContent: 'space-between',
         height: verticalScale(90),
