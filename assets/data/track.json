@@ -1,0 +1,2091 @@
+[
+    {
+        "name": "Purpose",
+        "url": "/Purpose",
+        "date": "2024-05-27T18:30:00.000Z",
+        "id": "81710c7b-e574-44c0-99d7-af986d5d0864",
+        "genre": "Dance-Pop",
+        "artists": [
+            {
+                "name": "Sketchez",
+                "url": "/artist/821/sketchez"
+            },
+            {
+                "name": "Aeden",
+                "url": "/artist/8/aeden"
+            }
+        ],
+        "coverUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/686/325x325/purpose-1716854454-YCR6bYfSep.PNG",
+        "previewUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/686/purpose-1716854456-40zrYsfARo.mp3",
+        "tags": [
+            {
+                "name": "Dreamy",
+                "color": {
+                    "r": 130,
+                    "g": 218,
+                    "b": 253
+                },
+                "mood": 3
+            },
+            {
+                "name": "Elegant",
+                "color": {
+                    "r": 255,
+                    "g": 225,
+                    "b": 206
+                },
+                "mood": 28
+            },
+            {
+                "name": "Euphoric",
+                "color": {
+                    "r": 255,
+                    "g": 234,
+                    "b": 182
+                },
+                "mood": 5
+            },
+            {
+                "name": "Floating",
+                "color": {
+                    "r": 229,
+                    "g": 233,
+                    "b": 240
+                },
+                "mood": 29
+            },
+            {
+                "name": "Glamorous",
+                "color": {
+                    "r": 237,
+                    "g": 226,
+                    "b": 254
+                },
+                "mood": 9
+            },
+            {
+                "name": "Laid Back",
+                "color": {
+                    "r": 114,
+                    "g": 221,
+                    "b": 195
+                },
+                "mood": 13
+            },
+            {
+                "name": "Romantic",
+                "color": {
+                    "r": 205,
+                    "g": 176,
+                    "b": 255
+                },
+                "mood": 19
+            },
+            {
+                "name": "Sexy",
+                "color": {
+                    "r": 226,
+                    "g": 5,
+                    "b": 67
+                },
+                "mood": 22
+            }
+        ],
+        "download": {
+            "regular": "https://ncs.io/track/download/81710c7b-e574-44c0-99d7-af986d5d0864"
+        }
+    },
+    {
+        "name": "Feel Like",
+        "url": "/ACFeelLike",
+        "date": "2024-05-23T18:30:00.000Z",
+        "id": "0c5817fd-4658-450e-b762-69b8da22420c",
+        "genre": "Techno",
+        "artists": [
+            {
+                "name": "Aix Cee",
+                "url": "/artist/1117/aix-cee"
+            }
+        ],
+        "coverUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/685/325x325/feel-like-1716544854-pYxFtraNxA.jpg",
+        "previewUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/685/feel-like-1716544856-5YaGdjPpCf.mp3",
+        "tags": [
+            {
+                "name": "Dark",
+                "color": {
+                    "r": 51,
+                    "g": 51,
+                    "b": 51
+                },
+                "mood": 2
+            },
+            {
+                "name": "Eccentric",
+                "color": {
+                    "r": 255,
+                    "g": 235,
+                    "b": 186
+                },
+                "mood": 27
+            },
+            {
+                "name": "Fear",
+                "color": {
+                    "r": 255,
+                    "g": 220,
+                    "b": 229
+                },
+                "mood": 7
+            },
+            {
+                "name": "Glamorous",
+                "color": {
+                    "r": 237,
+                    "g": 226,
+                    "b": 254
+                },
+                "mood": 9
+            },
+            {
+                "name": "Mysterious",
+                "color": {
+                    "r": 147,
+                    "g": 224,
+                    "b": 136
+                },
+                "mood": 14
+            },
+            {
+                "name": "Quirky",
+                "color": {
+                    "r": 255,
+                    "g": 169,
+                    "b": 129
+                },
+                "mood": 16
+            },
+            {
+                "name": "Restless",
+                "color": {
+                    "r": 249,
+                    "g": 157,
+                    "b": 226
+                },
+                "mood": 18
+            },
+            {
+                "name": "Suspense",
+                "color": {
+                    "r": 97,
+                    "g": 102,
+                    "b": 112
+                },
+                "mood": 23
+            }
+        ],
+        "download": {
+            "regular": "https://ncs.io/track/download/0c5817fd-4658-450e-b762-69b8da22420c"
+        }
+    },
+    {
+        "name": "Comet",
+        "url": "/Comet",
+        "date": "2024-05-22T18:30:00.000Z",
+        "id": "ebb9a8a7-5b69-48d6-9816-d4439f85db16",
+        "genre": "Drumstep",
+        "artists": [
+            {
+                "name": "Keepsake",
+                "url": "/artist/1114/keepsake"
+            },
+            {
+                "name": "Skybreak",
+                "url": "/artist/1115/skybreak"
+            }
+        ],
+        "coverUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/683/325x325/comet-1716422454-LbQTehJ3ek.jpg",
+        "previewUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/683/comet-1716422457-Vd6pvNXfSt.mp3",
+        "tags": [
+            {
+                "name": "Dreamy",
+                "color": {
+                    "r": 130,
+                    "g": 218,
+                    "b": 253
+                },
+                "mood": 3
+            },
+            {
+                "name": "Epic",
+                "color": {
+                    "r": 255,
+                    "g": 212,
+                    "b": 224
+                },
+                "mood": 4
+            },
+            {
+                "name": "Euphoric",
+                "color": {
+                    "r": 255,
+                    "g": 234,
+                    "b": 182
+                },
+                "mood": 5
+            },
+            {
+                "name": "Happy",
+                "color": {
+                    "r": 255,
+                    "g": 216,
+                    "b": 118
+                },
+                "mood": 11
+            },
+            {
+                "name": "Hopeful",
+                "color": {
+                    "r": 119,
+                    "g": 209,
+                    "b": 243
+                },
+                "mood": 12
+            },
+            {
+                "name": "Sexy",
+                "color": {
+                    "r": 226,
+                    "g": 5,
+                    "b": 67
+                },
+                "mood": 22
+            }
+        ],
+        "download": {
+            "regular": "https://ncs.io/track/download/ebb9a8a7-5b69-48d6-9816-d4439f85db16",
+            "instrumental": "https://ncs.io/track/download/i_ebb9a8a7-5b69-48d6-9816-d4439f85db16"
+        }
+    },
+    {
+        "name": "Stuck",
+        "url": "/Stuck",
+        "date": "2024-05-20T18:30:00.000Z",
+        "id": "47359726-c0ef-49ff-877a-c759c3a0575c",
+        "genre": "Drum & Bass",
+        "artists": [
+            {
+                "name": "Ripple",
+                "url": "/artist/1091/ripple"
+            }
+        ],
+        "coverUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/682/325x325/stuck-1716249660-PoLBFgECNN.jpg",
+        "previewUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/682/1716284149_XdwkW7Wylp_01-Ripple---Stuck-NCS-Release.mp3",
+        "tags": [
+            {
+                "name": "Chasing",
+                "color": {
+                    "r": 194,
+                    "g": 236,
+                    "b": 254
+                },
+                "mood": 26
+            },
+            {
+                "name": "Dark",
+                "color": {
+                    "r": 51,
+                    "g": 51,
+                    "b": 51
+                },
+                "mood": 2
+            },
+            {
+                "name": "Epic",
+                "color": {
+                    "r": 255,
+                    "g": 212,
+                    "b": 224
+                },
+                "mood": 4
+            },
+            {
+                "name": "Fear",
+                "color": {
+                    "r": 255,
+                    "g": 220,
+                    "b": 229
+                },
+                "mood": 7
+            },
+            {
+                "name": "Heavy",
+                "color": {
+                    "r": 212,
+                    "g": 217,
+                    "b": 227
+                },
+                "mood": 30
+            },
+            {
+                "name": "Mysterious",
+                "color": {
+                    "r": 147,
+                    "g": 224,
+                    "b": 136
+                },
+                "mood": 14
+            },
+            {
+                "name": "Restless",
+                "color": {
+                    "r": 249,
+                    "g": 157,
+                    "b": 226
+                },
+                "mood": 18
+            },
+            {
+                "name": "Suspense",
+                "color": {
+                    "r": 97,
+                    "g": 102,
+                    "b": 112
+                },
+                "mood": 23
+            }
+        ],
+        "download": {
+            "regular": "https://ncs.io/track/download/47359726-c0ef-49ff-877a-c759c3a0575c"
+        }
+    },
+    {
+        "name": "Soundclash",
+        "url": "/Soundclash",
+        "date": "2024-05-16T18:30:00.000Z",
+        "id": "98a4b84c-7982-499f-afba-b363bbf5fdce",
+        "genre": "Drum & Bass",
+        "artists": [
+            {
+                "name": "Jonth",
+                "url": "/artist/224/jonth"
+            }
+        ],
+        "coverUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/681/325x325/soundclash-1715904060-cWKCNXwEQl.png",
+        "previewUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/681/soundclash-1715904063-s4m9PtzCL0.mp3",
+        "tags": [
+            {
+                "name": "Chasing",
+                "color": {
+                    "r": 194,
+                    "g": 236,
+                    "b": 254
+                },
+                "mood": 26
+            },
+            {
+                "name": "Dark",
+                "color": {
+                    "r": 51,
+                    "g": 51,
+                    "b": 51
+                },
+                "mood": 2
+            },
+            {
+                "name": "Eccentric",
+                "color": {
+                    "r": 255,
+                    "g": 235,
+                    "b": 186
+                },
+                "mood": 27
+            },
+            {
+                "name": "Heavy",
+                "color": {
+                    "r": 212,
+                    "g": 217,
+                    "b": 227
+                },
+                "mood": 30
+            },
+            {
+                "name": "Mysterious",
+                "color": {
+                    "r": 147,
+                    "g": 224,
+                    "b": 136
+                },
+                "mood": 14
+            },
+            {
+                "name": "Restless",
+                "color": {
+                    "r": 249,
+                    "g": 157,
+                    "b": 226
+                },
+                "mood": 18
+            },
+            {
+                "name": "Suspense",
+                "color": {
+                    "r": 97,
+                    "g": 102,
+                    "b": 112
+                },
+                "mood": 23
+            },
+            {
+                "name": "Weird",
+                "color": {
+                    "r": 32,
+                    "g": 201,
+                    "b": 51
+                },
+                "mood": 24
+            }
+        ],
+        "download": {
+            "regular": "https://ncs.io/track/download/98a4b84c-7982-499f-afba-b363bbf5fdce"
+        }
+    },
+    {
+        "name": "BANE",
+        "url": "/BANE",
+        "date": "2024-05-15T18:30:00.000Z",
+        "id": "bb070aaa-1e96-410f-a59f-4510005e9af6",
+        "genre": "Brazilian Phonk",
+        "artists": [
+            {
+                "name": "Emin Nilsen",
+                "url": "/artist/1102/emin-nilsen"
+            }
+        ],
+        "coverUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/680/325x325/bane-1715817653-UgIOxKoMke.png",
+        "previewUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/680/1715943750_B6xIOZRafw_01-Emin-Nilsen---BANE-NCS-Release.mp3",
+        "tags": [
+            {
+                "name": "Eccentric",
+                "color": {
+                    "r": 255,
+                    "g": 235,
+                    "b": 186
+                },
+                "mood": 27
+            },
+            {
+                "name": "Elegant",
+                "color": {
+                    "r": 255,
+                    "g": 225,
+                    "b": 206
+                },
+                "mood": 28
+            },
+            {
+                "name": "Glamorous",
+                "color": {
+                    "r": 237,
+                    "g": 226,
+                    "b": 254
+                },
+                "mood": 9
+            },
+            {
+                "name": "Floating",
+                "color": {
+                    "r": 229,
+                    "g": 233,
+                    "b": 240
+                },
+                "mood": 29
+            },
+            {
+                "name": "Laid Back",
+                "color": {
+                    "r": 114,
+                    "g": 221,
+                    "b": 195
+                },
+                "mood": 13
+            },
+            {
+                "name": "Sentimental",
+                "color": {
+                    "r": 177,
+                    "g": 220,
+                    "b": 187
+                },
+                "mood": 31
+            },
+            {
+                "name": "Restless",
+                "color": {
+                    "r": 249,
+                    "g": 157,
+                    "b": 226
+                },
+                "mood": 18
+            },
+            {
+                "name": "Energetic",
+                "color": {
+                    "r": 253,
+                    "g": 128,
+                    "b": 182
+                },
+                "mood": 6
+            }
+        ],
+        "download": {
+            "regular": "https://ncs.io/track/download/bb070aaa-1e96-410f-a59f-4510005e9af6"
+        }
+    },
+    {
+        "name": "Donna",
+        "url": "/Donna",
+        "date": "2024-05-13T18:30:00.000Z",
+        "id": "9a9af1fd-32fa-4612-a1c7-a6e554e9a417",
+        "genre": "Garage",
+        "artists": [
+            {
+                "name": "maria kallastu",
+                "url": "/artist/1112/maria-kallastu"
+            },
+            {
+                "name": "Sander Mölder",
+                "url": "/artist/1113/sander-molder"
+            },
+            {
+                "name": "Soundy",
+                "url": "/artist/1084/soundy"
+            }
+        ],
+        "coverUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/679/325x325/donna-1715644858-iNkVX404SO.jpg",
+        "previewUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/679/donna-1715644860-7a2bMLVxPd.mp3",
+        "tags": [
+            {
+                "name": "Dreamy",
+                "color": {
+                    "r": 130,
+                    "g": 218,
+                    "b": 253
+                },
+                "mood": 3
+            },
+            {
+                "name": "Eccentric",
+                "color": {
+                    "r": 255,
+                    "g": 235,
+                    "b": 186
+                },
+                "mood": 27
+            },
+            {
+                "name": "Elegant",
+                "color": {
+                    "r": 255,
+                    "g": 225,
+                    "b": 206
+                },
+                "mood": 28
+            },
+            {
+                "name": "Euphoric",
+                "color": {
+                    "r": 255,
+                    "g": 234,
+                    "b": 182
+                },
+                "mood": 5
+            },
+            {
+                "name": "Floating",
+                "color": {
+                    "r": 229,
+                    "g": 233,
+                    "b": 240
+                },
+                "mood": 29
+            },
+            {
+                "name": "Glamorous",
+                "color": {
+                    "r": 237,
+                    "g": 226,
+                    "b": 254
+                },
+                "mood": 9
+            },
+            {
+                "name": "Restless",
+                "color": {
+                    "r": 249,
+                    "g": 157,
+                    "b": 226
+                },
+                "mood": 18
+            },
+            {
+                "name": "Romantic",
+                "color": {
+                    "r": 205,
+                    "g": 176,
+                    "b": 255
+                },
+                "mood": 19
+            },
+            {
+                "name": "Sentimental",
+                "color": {
+                    "r": 177,
+                    "g": 220,
+                    "b": 187
+                },
+                "mood": 31
+            },
+            {
+                "name": "Sexy",
+                "color": {
+                    "r": 226,
+                    "g": 5,
+                    "b": 67
+                },
+                "mood": 22
+            }
+        ],
+        "download": {
+            "regular": "https://ncs.io/track/download/9a9af1fd-32fa-4612-a1c7-a6e554e9a417"
+        }
+    },
+    {
+        "name": "fade",
+        "url": "/dashie_fade",
+        "date": "2024-05-09T18:30:00.000Z",
+        "id": "5155507a-4c55-4b10-92db-cba0aad61955",
+        "genre": "Brazilian Phonk",
+        "artists": [
+            {
+                "name": "dashie",
+                "url": "/artist/1111/dashie"
+            }
+        ],
+        "coverUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/678/325x325/fade-1715299258-UMAjk5s2UY.jpg",
+        "previewUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/678/1715334349_3pvHPqPk5e_01-dashie---Fade-NCS-Release.mp3",
+        "tags": [
+            {
+                "name": "Dreamy",
+                "color": {
+                    "r": 130,
+                    "g": 218,
+                    "b": 253
+                },
+                "mood": 3
+            },
+            {
+                "name": "Euphoric",
+                "color": {
+                    "r": 255,
+                    "g": 234,
+                    "b": 182
+                },
+                "mood": 5
+            },
+            {
+                "name": "Mysterious",
+                "color": {
+                    "r": 147,
+                    "g": 224,
+                    "b": 136
+                },
+                "mood": 14
+            },
+            {
+                "name": "Quirky",
+                "color": {
+                    "r": 255,
+                    "g": 169,
+                    "b": 129
+                },
+                "mood": 16
+            },
+            {
+                "name": "Weird",
+                "color": {
+                    "r": 32,
+                    "g": 201,
+                    "b": 51
+                },
+                "mood": 24
+            }
+        ],
+        "download": {
+            "regular": "https://ncs.io/track/download/5155507a-4c55-4b10-92db-cba0aad61955"
+        }
+    },
+    {
+        "name": "Will You Come",
+        "url": "/WYC",
+        "date": "2024-05-08T18:30:00.000Z",
+        "id": "69ed923f-d351-4782-bf58-33159860dc40",
+        "genre": "Dance Pop",
+        "artists": [
+            {
+                "name": "Reuben Cameron",
+                "url": "/artist/1108/reuben-cameron"
+            },
+            {
+                "name": "DEAN",
+                "url": "/artist/1109/dean"
+            },
+            {
+                "name": "Palm Skies",
+                "url": "/artist/1110/palm-skies"
+            }
+        ],
+        "coverUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/677/325x325/will-you-come-1715212857-YkB10P07r8.jpg",
+        "previewUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/677/will-you-come-1715212858-FK2XJ6Ksjk.mp3",
+        "tags": [
+            {
+                "name": "Dreamy",
+                "color": {
+                    "r": 130,
+                    "g": 218,
+                    "b": 253
+                },
+                "mood": 3
+            },
+            {
+                "name": "Euphoric",
+                "color": {
+                    "r": 255,
+                    "g": 234,
+                    "b": 182
+                },
+                "mood": 5
+            },
+            {
+                "name": "Happy",
+                "color": {
+                    "r": 255,
+                    "g": 216,
+                    "b": 118
+                },
+                "mood": 11
+            },
+            {
+                "name": "Quirky",
+                "color": {
+                    "r": 255,
+                    "g": 169,
+                    "b": 129
+                },
+                "mood": 16
+            },
+            {
+                "name": "Restless",
+                "color": {
+                    "r": 249,
+                    "g": 157,
+                    "b": 226
+                },
+                "mood": 18
+            },
+            {
+                "name": "Sentimental",
+                "color": {
+                    "r": 177,
+                    "g": 220,
+                    "b": 187
+                },
+                "mood": 31
+            },
+            {
+                "name": "Sexy",
+                "color": {
+                    "r": 226,
+                    "g": 5,
+                    "b": 67
+                },
+                "mood": 22
+            }
+        ],
+        "download": {
+            "regular": "https://ncs.io/track/download/69ed923f-d351-4782-bf58-33159860dc40",
+            "instrumental": "https://ncs.io/track/download/i_69ed923f-d351-4782-bf58-33159860dc40"
+        }
+    },
+    {
+        "name": "Back & Forth",
+        "url": "/BackAndForth",
+        "date": "2024-05-06T18:30:00.000Z",
+        "id": "1583059f-8e48-42f6-841d-d31558648056",
+        "genre": "Garage",
+        "artists": [
+            {
+                "name": "MANSHN",
+                "url": "/artist/838/manshn"
+            }
+        ],
+        "coverUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/672/325x325/back-forth-1715040056-pBp6GBMpE8.jpg",
+        "previewUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/672/back-forth-1715040058-kAbtnPseSr.mp3",
+        "tags": [
+            {
+                "name": "Chasing",
+                "color": {
+                    "r": 194,
+                    "g": 236,
+                    "b": 254
+                },
+                "mood": 26
+            },
+            {
+                "name": "Dreamy",
+                "color": {
+                    "r": 130,
+                    "g": 218,
+                    "b": 253
+                },
+                "mood": 3
+            },
+            {
+                "name": "Heavy",
+                "color": {
+                    "r": 212,
+                    "g": 217,
+                    "b": 227
+                },
+                "mood": 30
+            },
+            {
+                "name": "Mysterious",
+                "color": {
+                    "r": 147,
+                    "g": 224,
+                    "b": 136
+                },
+                "mood": 14
+            },
+            {
+                "name": "Quirky",
+                "color": {
+                    "r": 255,
+                    "g": 169,
+                    "b": 129
+                },
+                "mood": 16
+            },
+            {
+                "name": "Restless",
+                "color": {
+                    "r": 249,
+                    "g": 157,
+                    "b": 226
+                },
+                "mood": 18
+            },
+            {
+                "name": "Suspense",
+                "color": {
+                    "r": 97,
+                    "g": 102,
+                    "b": 112
+                },
+                "mood": 23
+            }
+        ],
+        "download": {
+            "regular": "https://ncs.io/track/download/1583059f-8e48-42f6-841d-d31558648056"
+        }
+    },
+    {
+        "name": "Never Knew Me",
+        "url": "/NKM",
+        "date": "2024-05-02T18:30:00.000Z",
+        "id": "b49ac4b9-c66b-4b75-a2ac-403f54cd9d2c",
+        "genre": "Phonk",
+        "artists": [
+            {
+                "name": "Veela",
+                "url": "/artist/473/veela"
+            },
+            {
+                "name": "Rameses B",
+                "url": "/artist/364/rameses-b"
+            }
+        ],
+        "coverUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/671/325x325/never-knew-me-1714694455-vpqd36PBtL.jpg",
+        "previewUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/671/never-knew-me-1714694458-fKAOeO5QYK.mp3",
+        "tags": [
+            {
+                "name": "Dark",
+                "color": {
+                    "r": 51,
+                    "g": 51,
+                    "b": 51
+                },
+                "mood": 2
+            },
+            {
+                "name": "Dreamy",
+                "color": {
+                    "r": 130,
+                    "g": 218,
+                    "b": 253
+                },
+                "mood": 3
+            },
+            {
+                "name": "Fear",
+                "color": {
+                    "r": 255,
+                    "g": 220,
+                    "b": 229
+                },
+                "mood": 7
+            },
+            {
+                "name": "Laid Back",
+                "color": {
+                    "r": 114,
+                    "g": 221,
+                    "b": 195
+                },
+                "mood": 13
+            },
+            {
+                "name": "Mysterious",
+                "color": {
+                    "r": 147,
+                    "g": 224,
+                    "b": 136
+                },
+                "mood": 14
+            },
+            {
+                "name": "Sentimental",
+                "color": {
+                    "r": 177,
+                    "g": 220,
+                    "b": 187
+                },
+                "mood": 31
+            },
+            {
+                "name": "Suspense",
+                "color": {
+                    "r": 97,
+                    "g": 102,
+                    "b": 112
+                },
+                "mood": 23
+            },
+            {
+                "name": "Weird",
+                "color": {
+                    "r": 32,
+                    "g": 201,
+                    "b": 51
+                },
+                "mood": 24
+            }
+        ],
+        "download": {
+            "regular": "https://ncs.io/track/download/b49ac4b9-c66b-4b75-a2ac-403f54cd9d2c"
+        }
+    },
+    {
+        "name": "Want It All",
+        "url": "/WantItAll",
+        "date": "2024-05-01T18:30:00.000Z",
+        "id": "83e1b773-6c59-4881-8406-6a24a96850b3",
+        "genre": "Hardstyle",
+        "artists": [
+            {
+                "name": "Mqx",
+                "url": "/artist/1106/mqx"
+            },
+            {
+                "name": "MVSTAFA",
+                "url": "/artist/1107/mvstafa"
+            }
+        ],
+        "coverUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/670/325x325/want-it-all-1714608053-YXthkcJrdJ.jpg",
+        "previewUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/670/want-it-all-1714608054-xb4cqJAYuB.mp3",
+        "tags": [
+            {
+                "name": "Angry",
+                "color": {
+                    "r": 255,
+                    "g": 158,
+                    "b": 183
+                },
+                "mood": 1
+            },
+            {
+                "name": "Chasing",
+                "color": {
+                    "r": 194,
+                    "g": 236,
+                    "b": 254
+                },
+                "mood": 26
+            },
+            {
+                "name": "Dark",
+                "color": {
+                    "r": 51,
+                    "g": 51,
+                    "b": 51
+                },
+                "mood": 2
+            },
+            {
+                "name": "Dreamy",
+                "color": {
+                    "r": 130,
+                    "g": 218,
+                    "b": 253
+                },
+                "mood": 3
+            },
+            {
+                "name": "Heavy",
+                "color": {
+                    "r": 212,
+                    "g": 217,
+                    "b": 227
+                },
+                "mood": 30
+            },
+            {
+                "name": "Quirky",
+                "color": {
+                    "r": 255,
+                    "g": 169,
+                    "b": 129
+                },
+                "mood": 16
+            },
+            {
+                "name": "Mysterious",
+                "color": {
+                    "r": 147,
+                    "g": 224,
+                    "b": 136
+                },
+                "mood": 14
+            },
+            {
+                "name": "Scary",
+                "color": {
+                    "r": 97,
+                    "g": 44,
+                    "b": 59
+                },
+                "mood": 21
+            }
+        ],
+        "download": {
+            "regular": "https://ncs.io/track/download/83e1b773-6c59-4881-8406-6a24a96850b3",
+            "instrumental": "https://ncs.io/track/download/i_83e1b773-6c59-4881-8406-6a24a96850b3"
+        }
+    },
+    {
+        "name": "In Bonfires Green",
+        "url": "/IBG",
+        "date": "2024-04-29T18:30:00.000Z",
+        "id": "688687fa-2909-4b8b-b8ab-f38e2a2dad18",
+        "genre": "Jersey Club",
+        "artists": [
+            {
+                "name": "Psylla",
+                "url": "/artist/1105/psylla"
+            }
+        ],
+        "coverUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/669/325x325/in-bonfires-green-1714435254-kp355CUWgz.jpg",
+        "previewUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/669/in-bonfires-green-1714435257-BujVHrFqxS.mp3",
+        "tags": [
+            {
+                "name": "Chasing",
+                "color": {
+                    "r": 194,
+                    "g": 236,
+                    "b": 254
+                },
+                "mood": 26
+            },
+            {
+                "name": "Dreamy",
+                "color": {
+                    "r": 130,
+                    "g": 218,
+                    "b": 253
+                },
+                "mood": 3
+            },
+            {
+                "name": "Eccentric",
+                "color": {
+                    "r": 255,
+                    "g": 235,
+                    "b": 186
+                },
+                "mood": 27
+            },
+            {
+                "name": "Elegant",
+                "color": {
+                    "r": 255,
+                    "g": 225,
+                    "b": 206
+                },
+                "mood": 28
+            },
+            {
+                "name": "Epic",
+                "color": {
+                    "r": 255,
+                    "g": 212,
+                    "b": 224
+                },
+                "mood": 4
+            },
+            {
+                "name": "Floating",
+                "color": {
+                    "r": 229,
+                    "g": 233,
+                    "b": 240
+                },
+                "mood": 29
+            },
+            {
+                "name": "Quirky",
+                "color": {
+                    "r": 255,
+                    "g": 169,
+                    "b": 129
+                },
+                "mood": 16
+            },
+            {
+                "name": "Restless",
+                "color": {
+                    "r": 249,
+                    "g": 157,
+                    "b": 226
+                },
+                "mood": 18
+            },
+            {
+                "name": "Suspense",
+                "color": {
+                    "r": 97,
+                    "g": 102,
+                    "b": 112
+                },
+                "mood": 23
+            }
+        ],
+        "download": {
+            "regular": "https://ncs.io/track/download/688687fa-2909-4b8b-b8ab-f38e2a2dad18"
+        }
+    },
+    {
+        "name": "Kapoeira Phonk",
+        "url": "/KapoeiraPhonk",
+        "date": "2024-04-25T18:30:00.000Z",
+        "id": "9e2ae06b-daf0-4b56-8ee8-ac6aadeda72b",
+        "genre": "Brazilian Phonk",
+        "artists": [
+            {
+                "name": "DYNAMIS",
+                "url": "/artist/1103/dynamis"
+            },
+            {
+                "name": "HXDES",
+                "url": "/artist/1104/hxdes"
+            }
+        ],
+        "coverUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/668/325x325/kapoeira-phonk-1714089650-AluvaspqC3.png",
+        "previewUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/668/1715334625_3BjiNbkiiH_01-HXDES-DYNAMIS---Kapoeira-Phonk-NCS-Release.mp3",
+        "tags": [
+            {
+                "name": "Angry",
+                "color": {
+                    "r": 255,
+                    "g": 158,
+                    "b": 183
+                },
+                "mood": 1
+            },
+            {
+                "name": "Chasing",
+                "color": {
+                    "r": 194,
+                    "g": 236,
+                    "b": 254
+                },
+                "mood": 26
+            },
+            {
+                "name": "Dark",
+                "color": {
+                    "r": 51,
+                    "g": 51,
+                    "b": 51
+                },
+                "mood": 2
+            },
+            {
+                "name": "Fear",
+                "color": {
+                    "r": 255,
+                    "g": 220,
+                    "b": 229
+                },
+                "mood": 7
+            },
+            {
+                "name": "Heavy",
+                "color": {
+                    "r": 212,
+                    "g": 217,
+                    "b": 227
+                },
+                "mood": 30
+            },
+            {
+                "name": "Quirky",
+                "color": {
+                    "r": 255,
+                    "g": 169,
+                    "b": 129
+                },
+                "mood": 16
+            },
+            {
+                "name": "Restless",
+                "color": {
+                    "r": 249,
+                    "g": 157,
+                    "b": 226
+                },
+                "mood": 18
+            }
+        ],
+        "download": {
+            "regular": "https://ncs.io/track/download/9e2ae06b-daf0-4b56-8ee8-ac6aadeda72b"
+        }
+    },
+    {
+        "name": "VIDA NOVA",
+        "url": "/VIDANOVA",
+        "date": "2024-04-24T18:30:00.000Z",
+        "id": "17d745af-4807-4f1a-998e-2d878f6623be",
+        "genre": "Brazilian Phonk",
+        "artists": [
+            {
+                "name": "Emin Nilsen",
+                "url": "/artist/1102/emin-nilsen"
+            }
+        ],
+        "coverUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/667/325x325/vida-nova-1714003253-3Le18wvpzX.jpg",
+        "previewUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/667/1714042007_JniJKdkGeo_01-Emin-Nilsen---VIDA-NOVA-NCS-Release.mp3",
+        "tags": [
+            {
+                "name": "Dark",
+                "color": {
+                    "r": 51,
+                    "g": 51,
+                    "b": 51
+                },
+                "mood": 2
+            },
+            {
+                "name": "Dreamy",
+                "color": {
+                    "r": 130,
+                    "g": 218,
+                    "b": 253
+                },
+                "mood": 3
+            },
+            {
+                "name": "Fear",
+                "color": {
+                    "r": 255,
+                    "g": 220,
+                    "b": 229
+                },
+                "mood": 7
+            },
+            {
+                "name": "Heavy",
+                "color": {
+                    "r": 212,
+                    "g": 217,
+                    "b": 227
+                },
+                "mood": 30
+            },
+            {
+                "name": "Mysterious",
+                "color": {
+                    "r": 147,
+                    "g": 224,
+                    "b": 136
+                },
+                "mood": 14
+            },
+            {
+                "name": "Quirky",
+                "color": {
+                    "r": 255,
+                    "g": 169,
+                    "b": 129
+                },
+                "mood": 16
+            },
+            {
+                "name": "Restless",
+                "color": {
+                    "r": 249,
+                    "g": 157,
+                    "b": 226
+                },
+                "mood": 18
+            },
+            {
+                "name": "Scary",
+                "color": {
+                    "r": 97,
+                    "g": 44,
+                    "b": 59
+                },
+                "mood": 21
+            },
+            {
+                "name": "Suspense",
+                "color": {
+                    "r": 97,
+                    "g": 102,
+                    "b": 112
+                },
+                "mood": 23
+            },
+            {
+                "name": "Weird",
+                "color": {
+                    "r": 32,
+                    "g": 201,
+                    "b": 51
+                },
+                "mood": 24
+            }
+        ],
+        "download": {
+            "regular": "https://ncs.io/track/download/17d745af-4807-4f1a-998e-2d878f6623be"
+        }
+    },
+    {
+        "name": "Vibe",
+        "url": "/SV_Vibe",
+        "date": "2024-04-22T18:30:00.000Z",
+        "id": "b6661c0b-319e-4792-9ab4-1bd3796adb46",
+        "genre": "House",
+        "artists": [
+            {
+                "name": "Spicyverse",
+                "url": "/artist/1101/spicyverse"
+            }
+        ],
+        "coverUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/666/325x325/vibe-1713830456-NaXt0yALGW.jpg",
+        "previewUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/666/vibe-1713830458-cw0Xa0Hago.mp3",
+        "tags": [
+            {
+                "name": "Dreamy",
+                "color": {
+                    "r": 130,
+                    "g": 218,
+                    "b": 253
+                },
+                "mood": 3
+            },
+            {
+                "name": "Elegant",
+                "color": {
+                    "r": 255,
+                    "g": 225,
+                    "b": 206
+                },
+                "mood": 28
+            },
+            {
+                "name": "Eccentric",
+                "color": {
+                    "r": 255,
+                    "g": 235,
+                    "b": 186
+                },
+                "mood": 27
+            },
+            {
+                "name": "Glamorous",
+                "color": {
+                    "r": 237,
+                    "g": 226,
+                    "b": 254
+                },
+                "mood": 9
+            },
+            {
+                "name": "Happy",
+                "color": {
+                    "r": 255,
+                    "g": 216,
+                    "b": 118
+                },
+                "mood": 11
+            },
+            {
+                "name": "Quirky",
+                "color": {
+                    "r": 255,
+                    "g": 169,
+                    "b": 129
+                },
+                "mood": 16
+            },
+            {
+                "name": "Restless",
+                "color": {
+                    "r": 249,
+                    "g": 157,
+                    "b": 226
+                },
+                "mood": 18
+            },
+            {
+                "name": "Romantic",
+                "color": {
+                    "r": 205,
+                    "g": 176,
+                    "b": 255
+                },
+                "mood": 19
+            },
+            {
+                "name": "Sentimental",
+                "color": {
+                    "r": 177,
+                    "g": 220,
+                    "b": 187
+                },
+                "mood": 31
+            },
+            {
+                "name": "Sexy",
+                "color": {
+                    "r": 226,
+                    "g": 5,
+                    "b": 67
+                },
+                "mood": 22
+            }
+        ],
+        "download": {
+            "regular": "https://ncs.io/track/download/b6661c0b-319e-4792-9ab4-1bd3796adb46",
+            "instrumental": "https://ncs.io/track/download/i_b6661c0b-319e-4792-9ab4-1bd3796adb46"
+        }
+    },
+    {
+        "name": "Help Me Help You",
+        "url": "/HMHY",
+        "date": "2024-04-18T18:30:00.000Z",
+        "id": "4b84ca5a-4b1e-4778-aa04-8f47b1784f5a",
+        "genre": "Electronic Rock",
+        "artists": [
+            {
+                "name": "Clarx",
+                "url": "/artist/81/clarx"
+            },
+            {
+                "name": "Shiah Maisel",
+                "url": "/artist/538/shiah-maisel"
+            }
+        ],
+        "coverUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/664/325x325/help-me-help-you-1713484854-0qtgOu0bPa.jpg",
+        "previewUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/664/help-me-help-you-1713484856-ps8OA7f3pn.mp3",
+        "tags": [
+            {
+                "name": "Angry",
+                "color": {
+                    "r": 255,
+                    "g": 158,
+                    "b": 183
+                },
+                "mood": 1
+            },
+            {
+                "name": "Dark",
+                "color": {
+                    "r": 51,
+                    "g": 51,
+                    "b": 51
+                },
+                "mood": 2
+            },
+            {
+                "name": "Dreamy",
+                "color": {
+                    "r": 130,
+                    "g": 218,
+                    "b": 253
+                },
+                "mood": 3
+            },
+            {
+                "name": "Epic",
+                "color": {
+                    "r": 255,
+                    "g": 212,
+                    "b": 224
+                },
+                "mood": 4
+            },
+            {
+                "name": "Euphoric",
+                "color": {
+                    "r": 255,
+                    "g": 234,
+                    "b": 182
+                },
+                "mood": 5
+            },
+            {
+                "name": "Glamorous",
+                "color": {
+                    "r": 237,
+                    "g": 226,
+                    "b": 254
+                },
+                "mood": 9
+            },
+            {
+                "name": "Hopeful",
+                "color": {
+                    "r": 119,
+                    "g": 209,
+                    "b": 243
+                },
+                "mood": 12
+            },
+            {
+                "name": "Laid Back",
+                "color": {
+                    "r": 114,
+                    "g": 221,
+                    "b": 195
+                },
+                "mood": 13
+            },
+            {
+                "name": "Mysterious",
+                "color": {
+                    "r": 147,
+                    "g": 224,
+                    "b": 136
+                },
+                "mood": 14
+            },
+            {
+                "name": "Quirky",
+                "color": {
+                    "r": 255,
+                    "g": 169,
+                    "b": 129
+                },
+                "mood": 16
+            },
+            {
+                "name": "Restless",
+                "color": {
+                    "r": 249,
+                    "g": 157,
+                    "b": 226
+                },
+                "mood": 18
+            },
+            {
+                "name": "Sad",
+                "color": {
+                    "r": 204,
+                    "g": 204,
+                    "b": 204
+                },
+                "mood": 20
+            },
+            {
+                "name": "Suspense",
+                "color": {
+                    "r": 97,
+                    "g": 102,
+                    "b": 112
+                },
+                "mood": 23
+            },
+            {
+                "name": "Chasing",
+                "color": {
+                    "r": 194,
+                    "g": 236,
+                    "b": 254
+                },
+                "mood": 26
+            },
+            {
+                "name": "Eccentric",
+                "color": {
+                    "r": 255,
+                    "g": 235,
+                    "b": 186
+                },
+                "mood": 27
+            },
+            {
+                "name": "Elegant",
+                "color": {
+                    "r": 255,
+                    "g": 225,
+                    "b": 206
+                },
+                "mood": 28
+            },
+            {
+                "name": "Floating",
+                "color": {
+                    "r": 229,
+                    "g": 233,
+                    "b": 240
+                },
+                "mood": 29
+            },
+            {
+                "name": "Heavy",
+                "color": {
+                    "r": 212,
+                    "g": 217,
+                    "b": 227
+                },
+                "mood": 30
+            },
+            {
+                "name": "Sentimental",
+                "color": {
+                    "r": 177,
+                    "g": 220,
+                    "b": 187
+                },
+                "mood": 31
+            }
+        ],
+        "download": {
+            "regular": "https://ncs.io/track/download/4b84ca5a-4b1e-4778-aa04-8f47b1784f5a",
+            "instrumental": "https://ncs.io/track/download/i_4b84ca5a-4b1e-4778-aa04-8f47b1784f5a"
+        }
+    },
+    {
+        "name": "Gotta Leave",
+        "url": "/GottaLeave",
+        "date": "2024-04-18T18:30:00.000Z",
+        "id": "928ead61-48d1-499e-acbf-399121904034",
+        "genre": "Electronic Rock",
+        "artists": [
+            {
+                "name": "Shiah Maisel",
+                "url": "/artist/538/shiah-maisel"
+            },
+            {
+                "name": "Clarx",
+                "url": "/artist/81/clarx"
+            }
+        ],
+        "coverUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/665/325x325/gotta-leave-1713484866-XfceEbkf1O.jpg",
+        "previewUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/665/gotta-leave-1713484868-A7hMzxerW0.mp3",
+        "tags": [
+            {
+                "name": "Angry",
+                "color": {
+                    "r": 255,
+                    "g": 158,
+                    "b": 183
+                },
+                "mood": 1
+            },
+            {
+                "name": "Dark",
+                "color": {
+                    "r": 51,
+                    "g": 51,
+                    "b": 51
+                },
+                "mood": 2
+            },
+            {
+                "name": "Dreamy",
+                "color": {
+                    "r": 130,
+                    "g": 218,
+                    "b": 253
+                },
+                "mood": 3
+            },
+            {
+                "name": "Epic",
+                "color": {
+                    "r": 255,
+                    "g": 212,
+                    "b": 224
+                },
+                "mood": 4
+            },
+            {
+                "name": "Euphoric",
+                "color": {
+                    "r": 255,
+                    "g": 234,
+                    "b": 182
+                },
+                "mood": 5
+            },
+            {
+                "name": "Glamorous",
+                "color": {
+                    "r": 237,
+                    "g": 226,
+                    "b": 254
+                },
+                "mood": 9
+            },
+            {
+                "name": "Hopeful",
+                "color": {
+                    "r": 119,
+                    "g": 209,
+                    "b": 243
+                },
+                "mood": 12
+            },
+            {
+                "name": "Laid Back",
+                "color": {
+                    "r": 114,
+                    "g": 221,
+                    "b": 195
+                },
+                "mood": 13
+            },
+            {
+                "name": "Mysterious",
+                "color": {
+                    "r": 147,
+                    "g": 224,
+                    "b": 136
+                },
+                "mood": 14
+            },
+            {
+                "name": "Quirky",
+                "color": {
+                    "r": 255,
+                    "g": 169,
+                    "b": 129
+                },
+                "mood": 16
+            },
+            {
+                "name": "Restless",
+                "color": {
+                    "r": 249,
+                    "g": 157,
+                    "b": 226
+                },
+                "mood": 18
+            },
+            {
+                "name": "Sad",
+                "color": {
+                    "r": 204,
+                    "g": 204,
+                    "b": 204
+                },
+                "mood": 20
+            },
+            {
+                "name": "Suspense",
+                "color": {
+                    "r": 97,
+                    "g": 102,
+                    "b": 112
+                },
+                "mood": 23
+            },
+            {
+                "name": "Chasing",
+                "color": {
+                    "r": 194,
+                    "g": 236,
+                    "b": 254
+                },
+                "mood": 26
+            },
+            {
+                "name": "Eccentric",
+                "color": {
+                    "r": 255,
+                    "g": 235,
+                    "b": 186
+                },
+                "mood": 27
+            },
+            {
+                "name": "Elegant",
+                "color": {
+                    "r": 255,
+                    "g": 225,
+                    "b": 206
+                },
+                "mood": 28
+            },
+            {
+                "name": "Floating",
+                "color": {
+                    "r": 229,
+                    "g": 233,
+                    "b": 240
+                },
+                "mood": 29
+            },
+            {
+                "name": "Heavy",
+                "color": {
+                    "r": 212,
+                    "g": 217,
+                    "b": 227
+                },
+                "mood": 30
+            },
+            {
+                "name": "Sentimental",
+                "color": {
+                    "r": 177,
+                    "g": 220,
+                    "b": 187
+                },
+                "mood": 31
+            }
+        ],
+        "download": {
+            "regular": "https://ncs.io/track/download/928ead61-48d1-499e-acbf-399121904034",
+            "instrumental": "https://ncs.io/track/download/i_928ead61-48d1-499e-acbf-399121904034"
+        }
+    },
+    {
+        "name": "Everyday",
+        "url": "/R_Everyday",
+        "date": "2024-04-17T18:30:00.000Z",
+        "id": "18d1eec9-b2f3-485b-b2eb-8c5c3a6f9e86",
+        "genre": "Drum & Bass",
+        "artists": [
+            {
+                "name": "Ripple",
+                "url": "/artist/1091/ripple"
+            }
+        ],
+        "coverUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/663/325x325/everyday-1713398470-TwM8V3eejv.jpg",
+        "previewUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/663/everyday-1713398472-7nbruWZVfa.mp3",
+        "tags": [
+            {
+                "name": "Angry",
+                "color": {
+                    "r": 255,
+                    "g": 158,
+                    "b": 183
+                },
+                "mood": 1
+            },
+            {
+                "name": "Chasing",
+                "color": {
+                    "r": 194,
+                    "g": 236,
+                    "b": 254
+                },
+                "mood": 26
+            },
+            {
+                "name": "Euphoric",
+                "color": {
+                    "r": 255,
+                    "g": 234,
+                    "b": 182
+                },
+                "mood": 5
+            },
+            {
+                "name": "Heavy",
+                "color": {
+                    "r": 212,
+                    "g": 217,
+                    "b": 227
+                },
+                "mood": 30
+            },
+            {
+                "name": "Restless",
+                "color": {
+                    "r": 249,
+                    "g": 157,
+                    "b": 226
+                },
+                "mood": 18
+            },
+            {
+                "name": "Scary",
+                "color": {
+                    "r": 97,
+                    "g": 44,
+                    "b": 59
+                },
+                "mood": 21
+            },
+            {
+                "name": "Suspense",
+                "color": {
+                    "r": 97,
+                    "g": 102,
+                    "b": 112
+                },
+                "mood": 23
+            },
+            {
+                "name": "Weird",
+                "color": {
+                    "r": 32,
+                    "g": 201,
+                    "b": 51
+                },
+                "mood": 24
+            }
+        ],
+        "download": {
+            "regular": "https://ncs.io/track/download/18d1eec9-b2f3-485b-b2eb-8c5c3a6f9e86"
+        }
+    },
+    {
+        "name": "I Wanna Dance",
+        "url": "/IWannaDance",
+        "date": "2024-04-15T18:30:00.000Z",
+        "id": "c81804c6-c916-4288-bb28-1e811f2b795b",
+        "genre": "Techno",
+        "artists": [
+            {
+                "name": "PYTI",
+                "url": "/artist/1100/pyti"
+            }
+        ],
+        "coverUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/662/325x325/i-wanna-dance-1713272452-ESu9xGPxYk.jpg",
+        "previewUrl": "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/662/1713276672_isnlxFlS9J_01-PYTI---I-Wanna-Dance-NCS-Release.mp3",
+        "tags": [
+            {
+                "name": "Angry",
+                "color": {
+                    "r": 255,
+                    "g": 158,
+                    "b": 183
+                },
+                "mood": 1
+            },
+            {
+                "name": "Dark",
+                "color": {
+                    "r": 51,
+                    "g": 51,
+                    "b": 51
+                },
+                "mood": 2
+            },
+            {
+                "name": "Chasing",
+                "color": {
+                    "r": 194,
+                    "g": 236,
+                    "b": 254
+                },
+                "mood": 26
+            },
+            {
+                "name": "Euphoric",
+                "color": {
+                    "r": 255,
+                    "g": 234,
+                    "b": 182
+                },
+                "mood": 5
+            },
+            {
+                "name": "Epic",
+                "color": {
+                    "r": 255,
+                    "g": 212,
+                    "b": 224
+                },
+                "mood": 4
+            },
+            {
+                "name": "Fear",
+                "color": {
+                    "r": 255,
+                    "g": 220,
+                    "b": 229
+                },
+                "mood": 7
+            },
+            {
+                "name": "Heavy",
+                "color": {
+                    "r": 212,
+                    "g": 217,
+                    "b": 227
+                },
+                "mood": 30
+            },
+            {
+                "name": "Restless",
+                "color": {
+                    "r": 249,
+                    "g": 157,
+                    "b": 226
+                },
+                "mood": 18
+            },
+            {
+                "name": "Suspense",
+                "color": {
+                    "r": 97,
+                    "g": 102,
+                    "b": 112
+                },
+                "mood": 23
+            }
+        ],
+        "download": {
+            "regular": "https://ncs.io/track/download/c81804c6-c916-4288-bb28-1e811f2b795b",
+            "instrumental": "https://ncs.io/track/download/i_c81804c6-c916-4288-bb28-1e811f2b795b"
+        }
+    }
+]

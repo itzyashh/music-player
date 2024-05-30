@@ -5,8 +5,6 @@ import { Ionicons } from '@expo/vector-icons';
 import { moderateScale, scale, verticalScale } from 'react-native-size-matters';
 import { NativeStackHeaderProps } from '@react-navigation/native-stack';
 const CustomHeader = (props: NativeStackHeaderProps) => {
-    console.log('props', props)
-
   return (
     <View style={styles.container}>
         <View style={styles.appLogoContainer}>
