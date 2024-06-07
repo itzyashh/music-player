@@ -2,6 +2,7 @@ import { FlatList, Image, Pressable, StyleSheet, Text, View } from 'react-native
 import React, { useEffect, useRef } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { colors } from '../../constants/colors'
+
 import { header } from '../../constants/style'
 import { LinearGradient } from 'expo-linear-gradient'
 import Tracks from '../../../assets/data/track.json'
@@ -9,42 +10,13 @@ import ThumbnailSongItem from '../../components/ThumbnailSongItem'
 import { Track, TrackAPI } from '../../types/Track'
 import LocalHost from '../../api/LocalHost'
 import { useQuery } from '@tanstack/react-query'
-import { Foundation } from '@expo/vector-icons';
-import TrackPlayer, { Event, useActiveTrack, usePlaybackState, useProgress, useTrackPlayerEvents } from 'react-native-track-player'
+import TrackPlayer from 'react-native-track-player'
+
 const Home = () => {
 
-  const playbackState = usePlaybackState()
-  const [isPlaying, setIsPlaying] = React.useState<boolean>(false)
-  const progress = useProgress()
-  console.log('Progress', progress)
-  const activeTrack = useActiveTrack()
-  console.log('Active track', activeTrack)
 
 
-console.log('Is playing', isPlaying)
-  useTrackPlayerEvents([Event.PlaybackState, Event.PlaybackActiveTrackChanged, Event.PlaybackError], (event) => {
-    switch (event.type) {
-      case Event.PlaybackActiveTrackChanged:
-        console.log('Track changed', event)
-        break
-      case Event.PlaybackError:
-        console.log('Error', event)
-        break
-      case Event.PlaybackState:
-        setIsPlaying(event.state === 'playing')
-        break
-    }
 
-  }
-  )
-
-  const TogglePlayback = async () => {
-    if (isPlaying) {
-      await TrackPlayer.pause()
-    } else {
-      await TrackPlayer.play().catch((error) => console.log('Error playing', error))
-    }
-  }
 
 
   const onTrackPress = async (item: Track) => {
@@ -53,11 +25,34 @@ console.log('Is playing', isPlaying)
       id: item.id,
       url: item.url,
       title: item.title,
-      artist: 'unknowm',
+      artist: item.artist,
       artwork: item.artwork
     })
     await TrackPlayer.play()
+
+    const queue = combineList.map((track: Track) => ({
+      id: track.id,
+      url: track.url,
+      title: track.title,
+      artist: track.artist,
+      artwork: track.artwork
+    }))
+
+    const filterQueue = queue.filter((track) => track.id !== item.id)
+
+    await TrackPlayer.add(filterQueue)
+
   }
+
+  const getQueue = async () => {
+    const queue = await TrackPlayer.getQueue()
+    console.log('Queue', queue.map((track) => track.title))
+  }
+
+  useEffect(() => {
+    getQueue()
+  }
+  , [onTrackPress])
 
   const [list1, setList1] = React.useState<[]>([])
   const [list2, setList2] = React.useState<[]>([])
@@ -75,12 +70,12 @@ console.log('Is playing', isPlaying)
       })
 
       const trackObject = response.data.map((track: TrackAPI) => {
-        // const combineArtist = track.artists.map((artist) => artist.name).join(', ')
+        const combineArtist = track.artists.map((artist) => artist.name).join(', ')
         return {
           id: track.id.toString(),
           url: track.download.regular,
           title: track.name,
-          artist: 'combineArtist',
+          artist: combineArtist,
           artwork: track.coverUrl
         }
       }
@@ -133,41 +128,7 @@ console.log('Is playing', isPlaying)
     
     </View>
     </LinearGradient>
-    <View style={styles.miniPlayer}>
-      <View style={{flexDirection: 'row', alignItems: 'center'}}>
-    <Image source={{uri: activeTrack?.artwork}} style={{
-      width: 55,
-      height: 55,
-      borderRadius: 5,
-      margin: 5
-    }} />
-    <View style={{marginLeft: 20,gap: 3}}>
-    <Text style={{
-      color: colors.text,
-      fontSize: 16,
-      fontWeight: '600'
-    }}>{activeTrack?.title}</Text>
-    <Text style={{
-      color: colors.text,
-      fontSize: 15,
-      fontWeight: '500',
-      opacity: 0.7
-    }}>{activeTrack?.artist}</Text>
-    </View>
-    <Pressable
-    onPress={() => TogglePlayback()}
-    style={{flex: 1, flexDirection: 'row', justifyContent: 'flex-end',marginRight: 30}}>
-    <Foundation 
-    name={isPlaying ? 'pause' : 'play'}
-     size={34} color="white" />
-    </Pressable>
-    </View>
-    <View style={{
-      height: 1,
-      backgroundColor: 'white',
-      width: progress.position / progress.buffered * 100 + '%'
-    }} />
-    </View>
+  
     </View>
   )
 }
@@ -185,12 +146,5 @@ const styles = StyleSheet.create({
   text: {
     color: colors.text
   },
-  miniPlayer: {
 
-
-    backgroundColor: colors.panel,
-
-
-
-  }
 })

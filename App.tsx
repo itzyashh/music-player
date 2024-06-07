@@ -11,6 +11,7 @@ export default function App() {
   useEffect(() => {
     async function setup() {
       await TrackPlayer.setupPlayer()
+
     }
     setup()
     }

@@ -5,6 +5,8 @@ import CustomHeader from "../components/CustomHeader";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Favourite from "../screens/Favourite/Favourite";
 import CustomTabBar from "../components/CustomTabBar";
+import Layout from "../screens/Layout";
+import Search from "../screens/Search/Search";
 
 
 const Stack = createNativeStackNavigator();
@@ -14,6 +16,7 @@ const Tab = createBottomTabNavigator();
 const MainNavigation = () => {
     return (
         <NavigationContainer>
+        <Layout>
             <Stack.Navigator screenOptions={{ 
                 headerTransparent: true,
                 statusBarTranslucent: true,
@@ -23,7 +26,13 @@ const MainNavigation = () => {
                 header: (props) => <CustomHeader {...props} /> ,
                 headerShown: true }}>
                 <Stack.Screen name="MyTabs" component={MyTabs} />
+                <Stack.Screen 
+                options={
+                    { headerShown: false }
+                }
+                name="Search" component={Search} />
             </Stack.Navigator>
+        </Layout>
         </NavigationContainer>
     )
 }

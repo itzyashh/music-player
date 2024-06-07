@@ -26,11 +26,11 @@ const styles = StyleSheet.create({
     },
     container: {
         marginHorizontal: moderateScale(6),
-
+        marginVertical: moderateScale(5),
     },
     text: {
         color: 'white',
-        fontSize: moderateScale(17),
+        fontSize: moderateScale(15),
         marginTop: moderateScale(5),
         fontWeight: 'bold',
         width: moderateScale(120)
