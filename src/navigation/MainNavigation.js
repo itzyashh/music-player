@@ -28,8 +28,12 @@ const MainNavigation = () => {
                 <Stack.Screen name="MyTabs" component={MyTabs} />
                 <Stack.Screen 
                 options={
-                    { headerShown: false }
+                    { headerShown: false,
+                    animation:'fade'
+                     }
+                    
                 }
+                
                 name="Search" component={Search} />
             </Stack.Navigator>
         </Layout>

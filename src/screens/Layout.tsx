@@ -1,8 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import MiniPlayer from '../components/MiniPlayer'
+import { useRoute } from '@react-navigation/native'
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
+
+
     return (
         <View style={styles.container}>
             {children}

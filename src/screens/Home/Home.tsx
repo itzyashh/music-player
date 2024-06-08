@@ -11,13 +11,14 @@ import { Track, TrackAPI } from '../../types/Track'
 import LocalHost from '../../api/LocalHost'
 import { useQuery } from '@tanstack/react-query'
 import TrackPlayer from 'react-native-track-player'
+import { customisedGradients, randomGradientGenerator } from '../../utils/helper'
 
 const Home = () => {
 
 
 
 
-
+  const [gradientArr, setGradientArr] = React.useState<string[]>(["", "", "", ""])
 
   const onTrackPress = async (item: Track) => {
     await TrackPlayer.reset()
@@ -101,13 +102,25 @@ const Home = () => {
   useEffect(() => {
     getAllSongs(null)
     getAllSongs(2)
+    getExclusiveGradient()
   }
   , [])
+
+
+
+  const getExclusiveGradient = () => {
+    const gradient = customisedGradients()
+    setGradientArr(gradient)
+  }
+
+  console.log('Gradient', gradientArr)
+
 
   return (
     <View style={styles.root}>
     <LinearGradient
-    colors={[colors.gradient2, colors.gradient1opacity0, colors.gradient1opacity1, colors.gradient1opacity2]}
+    // colors={[colors.gradient2, colors.gradient1opacity0, colors.gradient1opacity1, colors.gradient1opacity2]}
+    colors={gradientArr}
     locations={[0.2, 0.3, 0.7, 1]} 
     style={{flex:1}}>
     <View style={styles.container}>

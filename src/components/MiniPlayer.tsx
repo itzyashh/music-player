@@ -23,7 +23,7 @@ const MiniPlayer = () => {
         }
       }
   
-  console.log('Is playing', isPlaying)
+  console.log('Is playing', playbackState)
     useTrackPlayerEvents([Event.PlaybackState, Event.PlaybackActiveTrackChanged, Event.PlaybackError], (event) => {
       switch (event.type) {
         case Event.PlaybackActiveTrackChanged:
@@ -42,7 +42,7 @@ const MiniPlayer = () => {
 
 
     return (
-        <View style={styles.miniPlayer}>
+        <View style={[styles.miniPlayer,{display: playbackState.state === 'none' ? 'none' : 'flex'}]}>
             <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                 <Image source={{ uri: activeTrack?.artwork }} style={styles.artwork} />
