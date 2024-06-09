@@ -16,7 +16,7 @@ const CustomHeader = (props: NativeStackHeaderProps) => {
         </View>
         <View style={styles.iconContainer}>
         <Ionicons name="search-outline" style={styles.icon} onPress={() => props.navigation.navigate('Search')} />
-        <Ionicons name="person-circle-outline" style={styles.icon} />
+        <Ionicons name="person-circle-outline" style={styles.icon} onPress={() => props.navigation.navigate('Profile')} />
         </View>
     </View>
   )

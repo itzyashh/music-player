@@ -14,8 +14,14 @@ export const colors = {
 }
 
 export const searchScreenGradient = [
-
      'rgba(44, 62, 80, 0.3)',
      'rgba(44, 62, 80, 0.2)',
      'rgba(44, 62, 80, 0.1)',
+]
+
+export const AuthScreenGradient = [
+'rgba(30, 30, 30, 1)',       // A very dark grey for the base color
+ 'rgba(60, 60, 60, 0.3)',  // A lighter shade of grey with 30% opacity
+'rgba(60, 60, 60, 0.2)',  // The same lighter shade with 20% opacity
+'rgba(60, 60, 60, 0.1)',  //
 ]
