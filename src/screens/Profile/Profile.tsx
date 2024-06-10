@@ -1,4 +1,4 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native'
+import { Pressable, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { LinearGradient } from 'expo-linear-gradient'
 import { colors, searchScreenGradient } from '../../constants/colors'
@@ -7,17 +7,24 @@ import { FontAwesome } from '@expo/vector-icons';
 import AuthDrawer from '../../components/AuthDrawer'
 
 const Profile = () => {
+    const [isDrawerOpen, setIsDrawerOpen] = React.useState(false)
+    console.log('isDrawerOpen', isDrawerOpen)
   return (
-    <View style={styles.container}>
+    <Pressable
+    disabled={!isDrawerOpen}
+    onPress={()=>setIsDrawerOpen(false)}
+    style={styles.container}>
         <LinearGradient
          colors={searchScreenGradient}
             style={StyleSheet.absoluteFill}
         />
         {/* <UserProfile /> */}
-        <NoUser />
-       
-    <AuthDrawer />
-    </View>
+        <NoUser setIsDrawerOpen={setIsDrawerOpen} />
+    
+
+   <AuthDrawer onClose={()=>setIsDrawerOpen(false)} isOpen={isDrawerOpen} />
+
+    </Pressable>
   )
 }
 
@@ -36,7 +43,7 @@ const UserProfile = () => {
     )
 }
 
-const NoUser = () => {
+const NoUser = ({setIsDrawerOpen}: {setIsDrawerOpen: (value: boolean) => void}) => {
     return (
         <View style={styles.noUserContainer}>
         <FontAwesome name="user-circle" size={moderateScale(200)} color="#7777" />
@@ -45,6 +52,11 @@ const NoUser = () => {
         <Text style={styles.email}>
             Please login to access all features
         </Text>
+        <TouchableOpacity 
+        onPress={()=>setIsDrawerOpen(true)}
+        style={styles.loginButton}>
+            <Text style={styles.loginButtonText}>Login</Text>
+        </TouchableOpacity>
         </View>
         </View>
     )
@@ -92,5 +104,17 @@ const styles = StyleSheet.create({
         flex: 1,
         marginTop: verticalScale(60),
         alignItems: 'center',
-    }
+    },
+    loginButton: {
+        backgroundColor: colors.panel,
+        padding: moderateScale(10),
+        borderRadius: moderateScale(5),
+        width: moderateScale(200),
+        alignItems: 'center',
+        marginTop: verticalScale(20),
+    },
+    loginButtonText: {
+        color: colors.panelText,
+        fontSize: moderateScale(16),
+    },
 })

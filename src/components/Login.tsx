@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { Pressable, StyleSheet, Text, TextInput, TouchableOpacity, View,Keyboard } from 'react-native'
 import React from 'react'
 import { moderateScale } from 'react-native-size-matters'
 
@@ -8,7 +8,9 @@ const Login = ({
     onSignUpPress: () => void
 }) => {
   return (
-    <View>
+    <Pressable
+    onPress={Keyboard.dismiss}
+    >
          <Text style={styles.header}>LOGIN</Text>
     <TextInput
         placeholder="Email"
@@ -43,7 +45,7 @@ const Login = ({
         style={styles.signup}>Sign Up</Text> 
 
     </Text>
-    </View>
+    </Pressable>
   )
 }
 
