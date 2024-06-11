@@ -7,17 +7,43 @@ import { moderateScale } from 'react-native-size-matters';
 import Login from './Login';
 import Register from './Register';
 import { useKeyboard } from '@react-native-community/hooks';
+import { useDispatch, useSelector } from 'react-redux';
+import { setOpen } from '../redux/reducers/Drawer';
 
-const AuthDrawer = (props) => {
+const AuthDrawer = () => {
     const bottomSheetRef = React.useRef<BottomSheet>(null)
     const [isLogin, setIsLogin] = React.useState(true)
+    const dispatch = useDispatch()
     const keyboard = useKeyboard()
-
-    if (props.isOpen) {
-        bottomSheetRef.current?.expand()
-    }
     
+    // React.useEffect(() => {
+    //     if (isOpen) {
+    //         bottomSheetRef.current?.expand()
+    //     } else {
+    //         bottomSheetRef.current?.collapse()
+    //     }
+    // }, [isOpen])
+    
+    const drawerGlobalState = useSelector((state: any) => state.drawer)
+    console.log('drawer global state', drawerGlobalState)
 
+    React.useEffect(() => {
+        if (drawerGlobalState.isOpen === true) {
+            bottomSheetRef.current?.expand()
+        }else {
+            bottomSheetRef.current?.collapse()
+        }
+    }
+    , [drawerGlobalState.isOpen])
+
+    if(!drawerGlobalState.isOpen) {
+        return null
+    }
+
+    const onClose = () => {
+        bottomSheetRef.current?.close()
+        dispatch(setOpen(false))
+    }
 
 
   return (
@@ -31,7 +57,7 @@ const AuthDrawer = (props) => {
     handleComponent={null}
     enablePanDownToClose={true}
     enableOverDrag={true}
-    onClose={()=>props.onClose(true)}
+    onClose={onClose}
 >
     <LinearGradient
         colors={AuthScreenGradient}
@@ -39,7 +65,8 @@ const AuthDrawer = (props) => {
 
     <BottomSheetView style={styles.contentContainer}>
    {
-         isLogin ? <Login onSignUpPress={()=>setIsLogin(false)} /> : <Register onLoginPress={()=>setIsLogin(true)} />
+         isLogin ? <Login onSignUpPress={()=>setIsLogin(false)} onLogin={onClose} />
+         : <Register onLoginPress={()=>setIsLogin(true)} onRegister={onClose} />
    }
 
     </BottomSheetView>

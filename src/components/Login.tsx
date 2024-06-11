@@ -1,12 +1,38 @@
-import { Pressable, StyleSheet, Text, TextInput, TouchableOpacity, View,Keyboard } from 'react-native'
+import { Pressable, StyleSheet, Text, TextInput, TouchableOpacity, View,Keyboard, ActivityIndicator } from 'react-native'
 import React from 'react'
 import { moderateScale } from 'react-native-size-matters'
+import useLogin from '../hooks/useLogin'
+import { setUser } from '../redux/reducers/User'
+import { useDispatch } from 'react-redux'
 
 const Login = ({
-    onSignUpPress
+    onSignUpPress,
+    onLogin
 }: {
-    onSignUpPress: () => void
+    onSignUpPress: () => void,
+    onLogin: () => void
 }) => {
+    const dispatch = useDispatch()
+    const [email, setEmail] = React.useState('')
+    const [password, setPassword] = React.useState('')
+
+    const {login, loading, error, user} = useLogin();
+
+    const handleLogin = async () => {
+      await login(email, password)
+    }
+
+    React.useEffect(() => {
+        if(user) {
+            dispatch(setUser(user))
+            onLogin()
+        }
+    }, [user])
+    
+
+
+
+
   return (
     <Pressable
     onPress={Keyboard.dismiss}
@@ -17,6 +43,8 @@ const Login = ({
         style={styles.input}
         keyboardType="email-address"
         placeholderTextColor="#ffffff79"
+        onChangeText={setEmail}
+        autoCapitalize='none'
 
     />
     <TextInput
@@ -24,6 +52,7 @@ const Login = ({
         style={styles.input}
         secureTextEntry
         placeholderTextColor="#ffffff79"
+        onChangeText={setPassword}
     />
     <Text
         style={styles.forgotPassword}
@@ -34,8 +63,13 @@ const Login = ({
 
     <TouchableOpacity
         style={styles.button}
+        onPress={()=>handleLogin()}
     >
-        <Text style={styles.buttonText}>Login</Text>
+  { loading ?
+    <ActivityIndicator color="white" /> :
+  <Text style={styles.buttonText}>{
+            error ? 'Try Again' : 'Login'
+        }</Text>}
     </TouchableOpacity>
     <Text
         style={[styles.forgotPassword,{marginTop:moderateScale(15),textAlign:'center'}]}

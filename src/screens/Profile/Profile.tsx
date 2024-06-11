@@ -5,10 +5,23 @@ import { colors, searchScreenGradient } from '../../constants/colors'
 import { moderateScale, verticalScale } from 'react-native-size-matters'
 import { FontAwesome } from '@expo/vector-icons';
 import AuthDrawer from '../../components/AuthDrawer'
+import { useDispatch, useSelector } from 'react-redux'
+import { setUser } from '../../redux/reducers/User'
+import { setOpen } from '../../redux/reducers/Drawer'
+
 
 const Profile = () => {
     const [isDrawerOpen, setIsDrawerOpen] = React.useState(false)
-    console.log('isDrawerOpen', isDrawerOpen)
+    const user = useSelector((state: any) => state.user.user)
+    console.log('user222', user)
+    console.log('is drawer open', isDrawerOpen)
+
+    const dispatch = useDispatch()
+
+    const handleLogout = () => {
+        dispatch(setUser(null))
+    }
+
   return (
     <Pressable
     disabled={!isDrawerOpen}
@@ -18,24 +31,36 @@ const Profile = () => {
          colors={searchScreenGradient}
             style={StyleSheet.absoluteFill}
         />
-        {/* <UserProfile /> */}
-        <NoUser setIsDrawerOpen={setIsDrawerOpen} />
+
+        {
+            user?.token ? <UserProfile user={user} onLogoutPress={handleLogout}/> : <NoUser setIsDrawerOpen={setIsDrawerOpen} />
+        }
     
 
-   <AuthDrawer onClose={()=>setIsDrawerOpen(false)} isOpen={isDrawerOpen} />
+
 
     </Pressable>
   )
 }
 
-const UserProfile = () => {
+const UserProfile = ({
+    onLogoutPress,
+    user
+}: {
+    onLogoutPress: () => void
+    user: any
+}) => {
+
+    const {name, email} = user?.userDetails
+    
+
     return(<>
         <View style={styles.textContainer}>
-        <Text style={styles.userName}>John Doe</Text>
-        <Text style={styles.email}>johndoe@gmail.com</Text>
+        <Text style={styles.userName}>{name}</Text>
+        <Text style={styles.email}>{email}</Text>
         </View>
         <View style={styles.buttonContainer}>
-        <Pressable style={styles.button}>
+        <Pressable style={styles.button} onPress={onLogoutPress}>
             <Text style={styles.buttonText}>Logout</Text>
         </Pressable>
         </View>
@@ -44,6 +69,7 @@ const UserProfile = () => {
 }
 
 const NoUser = ({setIsDrawerOpen}: {setIsDrawerOpen: (value: boolean) => void}) => {
+    const dispatch = useDispatch()
     return (
         <View style={styles.noUserContainer}>
         <FontAwesome name="user-circle" size={moderateScale(200)} color="#7777" />
@@ -53,7 +79,7 @@ const NoUser = ({setIsDrawerOpen}: {setIsDrawerOpen: (value: boolean) => void}) 
             Please login to access all features
         </Text>
         <TouchableOpacity 
-        onPress={()=>setIsDrawerOpen(true)}
+        onPress={()=>dispatch(setOpen(true))}
         style={styles.loginButton}>
             <Text style={styles.loginButtonText}>Login</Text>
         </TouchableOpacity>

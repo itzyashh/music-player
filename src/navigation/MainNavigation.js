@@ -8,6 +8,7 @@ import CustomTabBar from "../components/CustomTabBar";
 import Layout from "../screens/Layout";
 import Search from "../screens/Search/Search";
 import Profile from "../screens/Profile/Profile";
+import AuthDrawer from "../components/AuthDrawer";
 
 
 const Stack = createNativeStackNavigator();
@@ -35,7 +36,7 @@ const MainNavigation = () => {
                         options={{headerShown: false}}
                         name="Profile" component={Profile} />
                 </Stack.Navigator>
-          
+                <AuthDrawer />
         </NavigationContainer>
     )
 }

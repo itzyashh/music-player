@@ -1,19 +1,21 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import userReducer from './reducers/User'
+import drawerReducer from './reducers/Drawer'
 import { persistReducer, persistStore } from 'redux-persist';
-import { MMKV } from 'react-native-mmkv';
+
 import { reduxStorage } from '../utils/MMKVutil';
 
 
 
 const rootReducer = combineReducers({
     user: userReducer,
-    // Add more reducers here
+    drawer: drawerReducer,
     });
 
     const persistConfig = {
         key: 'root',
         storage: reduxStorage,
+        whitelist: ['drawer'],
     };
 
     const persistedReducer = persistReducer(persistConfig, rootReducer);

@@ -1,18 +1,38 @@
-import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { ActivityIndicator, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { moderateScale } from 'react-native-size-matters'
+import useRegister from '../hooks/useRegister'
+import { useDispatch } from 'react-redux'
+import { setUser } from '../redux/reducers/User'
+
 
 const Register = ({
-    onLoginPress
+    onLoginPress,
+    onRegister
 }: {
-    onLoginPress: () => void
+    onLoginPress: () => void,
+    onRegister: () => void
 }) => {
-
+    const dispatch = useDispatch()
     const [password, setPassword] = React.useState('')
     const [confirmPassword, setConfirmPassword] = React.useState('')
     const [passwordMatch, setPasswordMatch] = React.useState(true)
     const [fullName, setFullName] = React.useState('')
     const [email, setEmail] = React.useState('')
+
+    const {register, loading, error, user} = useRegister();
+
+    const handleRegister = async () => {
+        await register(email, password, fullName)
+    }
+
+    React.useEffect(() => {
+        if(user) {
+            dispatch(setUser(user))
+            onRegister()
+        }
+    }, [user])
+
 
     React.useEffect(() => {
         if (password !== confirmPassword) {
@@ -30,6 +50,9 @@ const Register = ({
         style={styles.input}
         placeholderTextColor="#ffffff79"
         onChangeText={setFullName}
+        autoCapitalize='words'
+        autoCorrect={false}
+        autoComplete='name'
 
     />
     <TextInput
@@ -38,7 +61,9 @@ const Register = ({
         keyboardType="email-address"
         placeholderTextColor="#ffffff79"
         onChangeText={setEmail}
-
+        autoCapitalize='none'
+        autoCorrect={false}
+        autoComplete='email'
     />
     <TextInput
         placeholder="Password"
@@ -54,12 +79,15 @@ const Register = ({
         placeholderTextColor="#ffffff79"
         onChangeText={setConfirmPassword}
     />
-    <Text style={styles.matchError}>Password does not match</Text>
+  {!passwordMatch &&  <Text style={styles.matchError}>Password does not match</Text>}
 
     <TouchableOpacity
+        disabled={!passwordMatch}
         style={styles.button}
-    >
-        <Text style={styles.buttonText}>Register</Text>
+        onPress={()=>handleRegister()}
+    >{loading ? <ActivityIndicator color="white" /> : <Text style={styles.buttonText}>{
+        error ? 'Try Again' : 'Register'
+    }</Text>}
     </TouchableOpacity>
     <Text
         style={[styles.forgotPassword,{marginTop:moderateScale(15),textAlign:'center'}]}

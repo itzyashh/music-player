@@ -14,12 +14,14 @@ import TrackPlayer from 'react-native-track-player'
 import { customisedGradients, randomGradientGenerator } from '../../utils/helper'
 import { useDispatch, useSelector } from 'react-redux'
 import { setUser } from '../../redux/reducers/User'
+import { setOpen } from '../../redux/reducers/Drawer'
 
 const Home = () => {
   const dispatch = useDispatch()
    const user = useSelector((state: any) => state.user)
    console.log('User', user)
-
+  const drawerstate = useSelector((state: any) => state.drawer)
+  console.log('Drawer state', drawerstate)
 
   const [gradientArr, setGradientArr] = React.useState<string[]>(["", "", "", ""])
 
@@ -141,9 +143,6 @@ const Home = () => {
     renderItem={({ item, index }) => <ThumbnailSongItem item={item} index={index} onPress={()=>onTrackPress(item)} />}
     keyExtractor={(item) => item.id.toString()}
     />
-    <Button   title="Test" onPress={()=>{
-      dispatch(setUser({name: 'John'}) )
-    }} />
     </View>
     </LinearGradient>
   
