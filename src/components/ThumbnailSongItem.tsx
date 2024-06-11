@@ -1,21 +1,23 @@
-import { Image, Pressable, StyleSheet, Text, View } from 'react-native'
+import { Image, ImageBackground, Pressable, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import {Track} from '../types/Track'
 import { moderateScale } from 'react-native-size-matters'
-
+import { Ionicons } from '@expo/vector-icons';
 const ThumbnailSongItem = ({item, index, onPress,
-    height=moderateScale(120),
-    width=moderateScale(120)
+    type
 }: {item: Track, index: number, onPress: () => void
-    height?: number, width?: number
+    type: 'square' | 'default',
 }) => {
   return (
     <Pressable
     onPress={onPress}
     style={styles.container}>
-        <Image 
+        <ImageBackground 
         resizeMode='contain'
-        source={{uri: item.artwork}} style={{...styles.image, height, width}} />
+        source={{uri: item.artwork}} style={[styles.image, type === 'square' ? {width: moderateScale(150), height: moderateScale(150)} : {}]}>
+
+        <Ionicons name="heart" style={[styles.heart, type === 'square' ? {fontSize: moderateScale(25)} : {}]} />
+        </ImageBackground>
         <Text
         numberOfLines={2}
         style={styles.text}>{item.title}</Text>
@@ -41,5 +43,12 @@ const styles = StyleSheet.create({
         marginTop: moderateScale(5),
         fontWeight: 'bold',
         width: moderateScale(120)
+    },
+    heart: {
+        alignSelf: 'flex-end',
+        padding: moderateScale(5),
+        color: 'white',
+        fontSize: moderateScale(20),
+        zIndex: 1
     }
 })

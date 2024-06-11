@@ -46,9 +46,13 @@ const MiniPlayer = () => {
             <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                 <Image source={{ uri: activeTrack?.artwork }} style={styles.artwork} />
-                <View style={{ marginLeft: moderateScale(20), gap: 3 }}>
-                    <Text style={styles.title}>{activeTrack?.title}</Text>
-                    <Text style={styles.artist}>{activeTrack?.artist}</Text>
+                <View style={{ marginLeft: moderateScale(20), gap: 3 ,maxWidth: '68%'}}>
+                    <Text
+                    numberOfLines={1}
+                    style={styles.title}>{activeTrack?.title}</Text>
+                    <Text
+                    numberOfLines={1}
+                    style={styles.artist}>{activeTrack?.artist}</Text>
                 </View>
                 </View>
                 <Pressable

@@ -76,7 +76,7 @@ const Search = ({navigation}) => {
           style={styles.list}
           columnWrapperStyle={{ justifyContent: 'space-between' }}
           numColumns={2}
-          renderItem={({ item, index }) => <ThumbnailSongItem item={item} index={index} height={verticalScale(150)} width={moderateScale(150)} onPress={() => handlePress(item)}
+          renderItem={({ item, index }) => <ThumbnailSongItem item={item} index={index} type='square' onPress={() => handlePress(item)}
           />}
 
         />
