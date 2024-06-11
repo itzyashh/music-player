@@ -15,7 +15,8 @@ const rootReducer = combineReducers({
     const persistConfig = {
         key: 'root',
         storage: reduxStorage,
-        whitelist: ['drawer'],
+        whitelist: ['user'], // Persist user state
+        blacklist: ['drawer'], // Do not persist drawer state
     };
 
     const persistedReducer = persistReducer(persistConfig, rootReducer);
