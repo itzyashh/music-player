@@ -4,9 +4,10 @@ import {Track} from '../types/Track'
 import { moderateScale } from 'react-native-size-matters'
 import { Ionicons } from '@expo/vector-icons';
 const ThumbnailSongItem = ({item, index, onPress,
-    type
+    type, onFavoritePress
 }: {item: Track, index: number, onPress: () => void
     type: 'square' | 'default',
+    onFavoritePress: () => void
 }) => {
   return (
     <Pressable
@@ -16,7 +17,9 @@ const ThumbnailSongItem = ({item, index, onPress,
         resizeMode='contain'
         source={{uri: item.artwork}} style={[styles.image, type === 'square' ? {width: moderateScale(150), height: moderateScale(150)} : {}]}>
 
-        <Ionicons name="heart" style={[styles.heart, type === 'square' ? {fontSize: moderateScale(25)} : {}]} />
+        <Ionicons onPress={onFavoritePress} name="heart" style={[styles.heart,
+            item.isFavorite ? {color: 'red'} : {},
+            , type === 'square' ? {fontSize: moderateScale(25)} : {}]} />
         </ImageBackground>
         <Text
         numberOfLines={2}

@@ -19,6 +19,7 @@ export type Track = {
     title: string;
     artist: Artist;
     artwork: string;
+    isFavorite: boolean;
 }
 
 export type Artist = {

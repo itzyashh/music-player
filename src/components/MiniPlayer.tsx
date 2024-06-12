@@ -23,7 +23,7 @@ const MiniPlayer = () => {
         }
       }
   
-  console.log('Is playing', playbackState)
+
     useTrackPlayerEvents([Event.PlaybackState, Event.PlaybackActiveTrackChanged, Event.PlaybackError], (event) => {
       switch (event.type) {
         case Event.PlaybackActiveTrackChanged:

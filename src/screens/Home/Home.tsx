@@ -1,20 +1,16 @@
-import { Button, FlatList, Image, Pressable, StyleSheet, Text, View } from 'react-native'
-import React, { useEffect, useRef } from 'react'
-import { SafeAreaView } from 'react-native-safe-area-context'
+import { FlatList, StyleSheet, View } from 'react-native'
+import React, { useEffect } from 'react'
 import { colors } from '../../constants/colors'
 
 import { header } from '../../constants/style'
 import { LinearGradient } from 'expo-linear-gradient'
-import Tracks from '../../../assets/data/track.json'
 import ThumbnailSongItem from '../../components/ThumbnailSongItem'
 import { Track, TrackAPI } from '../../types/Track'
 import LocalHost from '../../api/LocalHost'
-import { useQuery } from '@tanstack/react-query'
 import TrackPlayer from 'react-native-track-player'
-import { customisedGradients, randomGradientGenerator } from '../../utils/helper'
+import { customisedGradients } from '../../utils/helper'
 import { useDispatch, useSelector } from 'react-redux'
-import { setUser } from '../../redux/reducers/User'
-import { setOpen } from '../../redux/reducers/Drawer'
+import { addFavorite } from '../../redux/reducers/Favorite'
 
 const Home = () => {
   const dispatch = useDispatch()
@@ -22,8 +18,32 @@ const Home = () => {
    console.log('User', user)
   const drawerstate = useSelector((state: any) => state.drawer)
   console.log('Drawer state', drawerstate)
-
+  const favorite = useSelector((state: any) => state.favorite.favorite)
   const [gradientArr, setGradientArr] = React.useState<string[]>(["", "", "", ""])
+  const [songsLoaded, setSongsLoaded] = React.useState<boolean>(false)
+  const checkFavorite = () => {
+    // check if list1 or list2 is in favorite
+    // if it is, add favorite = true to the object in list 1 or list 2
+
+    const list1Favorite = list1.map((track: Track) => {
+      const check = favorite.find((fav: Track) => fav.id === track.id)
+      return check ? {...track, isFavorite: true} : track
+    })
+
+    const list2Favorite = list2.map((track: Track) => {
+      const check = favorite.find((fav: Track) => fav.id === track.id)
+      return check ? {...track, isFavorite: true} : track
+    })
+
+    setList1(list1Favorite)
+    setList2(list2Favorite)
+  }
+
+  useEffect(() => {
+    checkFavorite()
+  }, [favorite, songsLoaded])
+
+
 
   const onTrackPress = async (item: Track) => {
     await TrackPlayer.reset()
@@ -65,6 +85,11 @@ const Home = () => {
   // console.log('List1', list1)
   // console.log('List2', list2)
 
+  const addToFavorite = (item: Track) => {
+    dispatch(addFavorite(item))
+  }
+
+
   const combineList = [...list2, ...list1]
 
   const getAllSongs = async (page:number|null) => {
@@ -90,12 +115,15 @@ const Home = () => {
       switch (page) {
         case 1:
           setList1(trackObject)
+          setSongsLoaded(true)
           break
         case 2:
           setList2(trackObject)
+          setSongsLoaded(true)
           break
         default:
           setList1(trackObject)
+          setSongsLoaded(true)
           break
       }
 
@@ -133,14 +161,16 @@ const Home = () => {
     data={list1}
     horizontal
     showsHorizontalScrollIndicator={false}
-    renderItem={({ item, index }) => <ThumbnailSongItem item={item} index={index} onPress={()=>onTrackPress(item)} />}
+    renderItem={({ item, index }) => <ThumbnailSongItem item={item} index={index} onPress={()=>onTrackPress(item)} 
+    onFavoritePress={()=>addToFavorite(item)}/> }
     keyExtractor={(item) => item.id.toString()}
     />
     <FlatList
     data={list2}
     horizontal
     showsHorizontalScrollIndicator={false}
-    renderItem={({ item, index }) => <ThumbnailSongItem item={item} index={index} onPress={()=>onTrackPress(item)} />}
+    renderItem={({ item, index }) => <ThumbnailSongItem item={item} index={index} onPress={()=>onTrackPress(item)} 
+    onFavoritePress={()=>addToFavorite(item)}/> }
     keyExtractor={(item) => item.id.toString()}
     />
     </View>
