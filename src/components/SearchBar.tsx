@@ -20,6 +20,7 @@ const SearchBar = ({
         placeholderTextColor={colors.panelText}
         style={styles.input}
         onChangeText={onSearch}
+        autoFocus
       />
     </View>
   )

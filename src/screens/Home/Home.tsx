@@ -64,6 +64,7 @@ const Home = () => {
       artwork: track.artwork
     }))
 
+
     const filterQueue = queue.filter((track) => track.id !== item.id)
 
     await TrackPlayer.add(filterQueue)
