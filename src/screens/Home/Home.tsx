@@ -162,7 +162,8 @@ const Home = () => {
     data={list1}
     horizontal
     showsHorizontalScrollIndicator={false}
-    renderItem={({ item, index }) => <ThumbnailSongItem item={item} index={index} onPress={()=>onTrackPress(item)} 
+    renderItem={({ item, index }) => <ThumbnailSongItem
+     item={item} index={index} onPress={()=>onTrackPress(item)} 
     onFavoritePress={()=>addToFavorite(item)}/> }
     keyExtractor={(item) => item.id.toString()}
     />

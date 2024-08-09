@@ -5,5 +5,5 @@ const baseURL = process.env.EXPO_PUBLIC_API_URL
 const localHost = "http://localhost:5000"
 
 export default axios.create({
-    baseURL: baseURL || localHost,
+    baseURL: localHost || baseURL,
     });
