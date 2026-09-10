@@ -3,12 +3,12 @@ import React, { useEffect } from 'react'
 import { colors } from '../../constants/colors'
 
 import { header } from '../../constants/style'
-import { LinearGradient } from 'expo-linear-gradient'
 import ThumbnailSongItem from '../../components/ThumbnailSongItem'
 import { Track, TrackAPI } from '../../types/Track'
 import LocalHost from '../../api/LocalHost'
 import TrackPlayer from 'react-native-track-player'
 import { customisedGradients } from '../../utils/helper'
+import { linearGradientStyle } from '../../utils/gradient'
 import { useDispatch, useSelector } from 'react-redux'
 import { addFavorite } from '../../redux/reducers/Favorite'
 
@@ -152,11 +152,7 @@ const Home = () => {
 
   return (
     <View style={styles.root}>
-    <LinearGradient
-    // colors={[colors.gradient2, colors.gradient1opacity0, colors.gradient1opacity1, colors.gradient1opacity2]}
-    colors={gradientArr}
-    locations={[0.2, 0.3, 0.7, 1]} 
-    style={{flex:1}}>
+    <View style={[{ flex: 1 }, linearGradientStyle(gradientArr, { locations: [0.2, 0.3, 0.7, 1] })]}>
     <View style={styles.container}>
     <FlatList
     data={list1}
@@ -176,7 +172,7 @@ const Home = () => {
     keyExtractor={(item) => item.id.toString()}
     />
     </View>
-    </LinearGradient>
+    </View>
   
     </View>
   )

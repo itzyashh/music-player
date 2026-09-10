@@ -1,8 +1,8 @@
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import React, { useCallback } from 'react'
 import BottomSheet, { BottomSheetBackdrop, BottomSheetView } from '@gorhom/bottom-sheet';
-import { AuthScreenGradient, searchScreenGradient } from '../constants/colors';
-import { LinearGradient } from 'expo-linear-gradient';
+import { AuthScreenGradient } from '../constants/colors';
+import { linearGradientStyle } from '../utils/gradient';
 import { moderateScale } from 'react-native-size-matters';
 import Login from './Login';
 import Register from './Register';
@@ -59,9 +59,7 @@ const AuthDrawer = () => {
     enableOverDrag={true}
     onClose={onClose}
 >
-    <LinearGradient
-        colors={AuthScreenGradient}
-        style={styles.gradient}>
+    <View style={[styles.gradient, linearGradientStyle(AuthScreenGradient)]}>
 
     <BottomSheetView style={styles.contentContainer}>
    {
@@ -70,7 +68,7 @@ const AuthDrawer = () => {
    }
 
     </BottomSheetView>
-    </LinearGradient>
+    </View>
 </BottomSheet>
   )
 }

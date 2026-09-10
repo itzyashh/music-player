@@ -3,8 +3,8 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { header } from '../../constants/style'
 import HorizontalSongItem from '../../components/HorizontalSongItem'
-import { LinearGradient } from 'expo-linear-gradient'
 import { customisedGradients } from '../../utils/helper'
+import { linearGradientStyle } from '../../utils/gradient'
 
 const Favourite = () => {
 
@@ -16,11 +16,11 @@ const Favourite = () => {
   const reverseData = data.slice().reverse()
   return (
     <View style={styles.container}>
-      <LinearGradient
-        colors={gradientArr}
-        style={StyleSheet.absoluteFill}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 1 }}
+      <View
+        style={[
+          StyleSheet.absoluteFill,
+          linearGradientStyle(gradientArr, { direction: 'to bottom right' }),
+        ]}
       />
       <FlatList
         data={reverseData}

@@ -1,7 +1,7 @@
 import { Pressable, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
-import { LinearGradient } from 'expo-linear-gradient'
 import { colors, searchScreenGradient } from '../../constants/colors'
+import { linearGradientStyle } from '../../utils/gradient'
 import { moderateScale, verticalScale } from 'react-native-size-matters'
 import { FontAwesome } from '@expo/vector-icons';
 import AuthDrawer from '../../components/AuthDrawer'
@@ -27,9 +27,11 @@ const Profile = () => {
     disabled={!isDrawerOpen}
     onPress={()=>setIsDrawerOpen(false)}
     style={styles.container}>
-        <LinearGradient
-         colors={searchScreenGradient}
-            style={StyleSheet.absoluteFill}
+        <View
+          style={[
+            StyleSheet.absoluteFill,
+            linearGradientStyle(searchScreenGradient),
+          ]}
         />
 
         {

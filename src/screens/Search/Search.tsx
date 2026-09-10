@@ -1,8 +1,8 @@
 import { FlatList, StyleSheet, Text, View } from 'react-native'
 import React, { useEffect } from 'react'
-import { LinearGradient } from 'expo-linear-gradient'
 
 import { colors, searchScreenGradient } from '../../constants/colors'
+import { linearGradientStyle } from '../../utils/gradient'
 import SearchBar from '../../components/SearchBar'
 import { moderateScale, verticalScale } from 'react-native-size-matters'
 import LocalHost from '../../api/LocalHost'
@@ -60,11 +60,7 @@ const Search = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <LinearGradient
-        colors={searchScreenGradient}
-        style={styles.linearGradient}
-        locations={[ 0.3, 0.7, 1]} 
-      >
+      <View style={[styles.linearGradient, linearGradientStyle(searchScreenGradient, { locations: [0.3, 0.7, 1] })]}>
         <View style={styles.searchContainer}>
         {/* @ts-ignore */}
         <AntDesign style={styles.icon} name="left"  onPress={() => navigation.goBack()} />
@@ -81,7 +77,7 @@ const Search = ({navigation}) => {
 
         />
 
-      </LinearGradient>
+      </View>
     </View>
   )
 }
